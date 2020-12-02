@@ -16,6 +16,10 @@
   margin-left: 15px;
   font-size: 14px;
 }
+.social li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .social svg {
   font-size: 22px;
 }
@@ -57,7 +61,7 @@
   padding-bottom: 1%;
 }
 .foot_logo {
-  margin-left: 9%;
+  margin-left: 125px;
   padding-top: 6px;
   padding-bottom: 1%;
 }

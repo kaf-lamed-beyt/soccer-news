@@ -74,10 +74,11 @@ const Footer = () => {
         <li>Contact Us</li>
       </div>
       <div className={footStyle.foot_logo}>
-          <li>
-            <img src="/img/Sky-Sports-Logo.svg" alt="logo" />© 2020 Sky UK
-          </li>
-        </div>
+        <li>
+          <img src="/img/Sky-Sports-Logo.svg" alt="logo" /> ©{" "}
+          {new Date().getFullYear()} Sky UK
+        </li>
+      </div>
     </footer>
   );
 };
