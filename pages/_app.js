@@ -1,9 +1,20 @@
+import React from "react"
 import "../styles/globals.css"
 import Head from "next/head"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/globals.css"
+import { ThemeProvider } from "@material-ui/core/styles"
+import CssBaseline from "@material-ui/core/CssBaseline"
 
 function MyApp({ Component, pageProps }) {
+  React.useEffect(() => {
+    const jssStyles = document.querySelector("#jss-server-side")
+
+    if (jssStyles) {
+      jssStyles.parentElement.removeChild(jssStyles)
+    }
+  }, [])
+
   return (
     <div>
       <Head>
@@ -15,7 +26,10 @@ function MyApp({ Component, pageProps }) {
         />
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </div>
   )
 }

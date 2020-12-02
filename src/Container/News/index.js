@@ -1,10 +1,12 @@
 import React from "react"
+import news from "./style/news.module.css"
+import { liveSports, headlines } from "../../news_data"
 
 const NewsLayout = () => {
     return (
-        <div className="news">
+        <section className={news.news_sect}>
             <h1>News Layout</h1>
-        </div>
+        </section>
     )
 }
 

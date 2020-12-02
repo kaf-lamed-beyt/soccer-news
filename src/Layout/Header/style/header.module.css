@@ -1,0 +1,17 @@
+.header {
+  border: 1px solid red;
+  display: flex;
+  background: #fff
+}
+.sky {
+  width: 20%;
+  height: 80px;
+  background: #002672;
+}
+.sports {
+  width: 80%;
+  height: 80px;
+  background: #e10000;
+}
+
+
