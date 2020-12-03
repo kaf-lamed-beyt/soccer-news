@@ -1,34 +1,117 @@
 .news_sect {
-    margin-top: 5%;
-    padding: 0 75px;
+  margin-top: 5%;
+  padding: 0 75px;
 }
+/* banner section starts here */
+.banner {
+  height: 80%;
+  width: 94%;
+  margin: 3% 0%;
+  background: #dcdcdc;
+  padding: 4px;
+}
+.banner_content {
+  background: #fff;
+  display: flex;
+}
+.img {
+  height: 100%;
+  width: 70%;
+}
+.banner_details {
+  width: 30%;
+  background: #ffe000;
+  padding: 3% 20px;
+}
+.banner_sport {
+  margin-top: 8%;
+}
+.banner_details div {
+  margin-top: 20%;
+}
+.contestants {
+  padding-bottom: 8%;
+  width: 190px;
+  height: 88px;
+}
+.bookings {
+  margin-top: 5%;
+}
+/* bannecr section ends here */
 .content_area {
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    padding-bottom: 5%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding-bottom: 5%;
 }
 .headline_img {
-    width: 100%;
+  width: 100%;
 }
 .details {
-    margin: 25px;
-    height: 160px;
-    width: 85%;
-    padding-top: 8px;
+  margin: 25px;
+  height: 160px;
+  width: 85%;
+  padding-top: 8px;
 }
 .sport {
-    font-size: 14px;
-    color: #3157A1;
-    padding: 2.8px 0px;
+  font-size: 14px;
+  color: #3157a1;
+  padding: 2.8px 0px;
 }
 .sport:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 .txt {
-    color: #4a4a4a;
-    font-size: 18px;
-    margin-top: -3%;
-    font-weight: 300;
+  color: #4a4a4a;
+  font-size: 18px;
+  margin-top: -3%;
+  font-weight: 300;
 }
+/* live sports section starts here */
+.live {
+  margin: 8% 0px;
+  padding: 12px 5px;
+  height: 100%;
+}
+.live h3 {
+  font-weight: 300;
+}
+#card {
+  height: 260px;
+  width: 280px;
+  background: #dcdcdc;
+  padding: 4px;
+  margin: 15px;
+}
+.live_content {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding-bottom: 12%;
+  padding: 8px 18px;
+}
+.live_content h4 {
+  height: 60px;
+}
+.live_content img {
+  margin-bottom: 2%;
+}
+.muted {
+  margin-top: 10px;
+  color: #4a4a4a;
+}
+.mute {
+  margin-top: -5%;
+  padding-bottom: 1%;
+  color: #4a4a4a;
+}
+.live_content p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.live_content h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* live sports section ends here */
