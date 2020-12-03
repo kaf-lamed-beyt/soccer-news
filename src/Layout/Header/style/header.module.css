@@ -1,16 +1,99 @@
 .header {
   display: flex;
-  background: #fff
+  height: 130px;
+  background: #fff;
 }
 .sky {
   width: 20%;
   height: 80px;
   background: #002672;
+  z-index: 200;
+}
+.sky img {
+  margin: 20px 198px;
+  height: 38px;
 }
 .sports {
   width: 80%;
   height: 80px;
   background: #e10000;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 235px;
 }
-
-
+.sports ul {
+  list-style-type: none;
+  color: #fff;
+  font-size: 14px;
+  padding-right: 10px;
+  display: flex;
+  margin-top: 1%;
+}
+.sports li {
+  margin: 15px 15px;
+  padding-bottom: 14px;
+  height: 22px;
+}
+.sports li:hover {
+  text-decoration: underline;
+  background: rgba(0,0,0,.1);
+  transition: all .3s ease-in;
+  cursor: pointer;
+}
+.bottom_nav {
+  display: flex;
+  margin: 0px 140px;
+  margin-top: -45px;
+  justify-content: space-between;
+}
+.bottom_nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.bottom_nav li {
+  padding: 8px 14px;
+  font-weight: 300;
+  height: 45px;
+}
+.bottom_nav li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  background: rgba(0,0,0,0.1);
+}
+.btn {
+  margin-right: 10%;
+  height: 35px;
+  width: 140px;
+  border: none;
+  color: #fff;
+  background: #e10000;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.btn:hover {
+  background: #910404;
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+.searchBox {
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 13px;
+  height: 36px;
+  padding: 2px 8px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background : #e10000;
+  outline: none;
+}
+.searchBox::placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+.icon {
+  font-size: 20px;
+  color: #fff;
+  margin-left: -125%;
+  margin-top: 23px;
+}
