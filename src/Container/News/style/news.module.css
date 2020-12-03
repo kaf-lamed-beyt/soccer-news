@@ -1,3 +1,34 @@
 .news_sect {
     margin-top: 5%;
+    padding: 0 75px;
+}
+.content_area {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding-bottom: 5%;
+}
+.headline_img {
+    width: 100%;
+}
+.details {
+    margin: 25px;
+    height: 160px;
+    width: 85%;
+    padding-top: 8px;
+}
+.sport {
+    font-size: 14px;
+    color: #3157A1;
+    padding: 2.8px 0px;
+}
+.sport:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.txt {
+    color: #4a4a4a;
+    font-size: 18px;
+    margin-top: -3%;
+    font-weight: 300;
 }

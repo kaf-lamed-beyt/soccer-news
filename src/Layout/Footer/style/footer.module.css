@@ -2,12 +2,12 @@
   background: #f4f4f4;
   height: 100%;
   margin-top: 3%;
+  padding: 18px 180px;
 }
 .social {
   display: flex;
-  padding-bottom: 18px;
-  padding-top: 18px;
-  margin-left: 9%;
+  margin-left: -1%;
+  padding: 8px 0px;
 }
 .social li {
   list-style-type: none;
@@ -26,9 +26,9 @@
 .links {
   border-top: 1px solid #dcdcdc;
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 12px;
+  justify-content: space-between;
   padding-bottom: 18px;
+  padding: 12px 8px;
   border-bottom: 1px solid #dcdcdc;
 }
 .link_text {
@@ -50,7 +50,7 @@
 }
 .rights {
   display: flex;
-  margin-left: 8%;
+  margin-left: -2%;
 }
 .rights li {
   list-style-type: none;
@@ -61,7 +61,6 @@
   padding-bottom: 1%;
 }
 .foot_logo {
-  margin-left: 125px;
   padding-top: 6px;
   padding-bottom: 1%;
 }

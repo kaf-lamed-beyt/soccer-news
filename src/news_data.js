@@ -12,7 +12,7 @@ export const headlines = [
   {
     sport: "Formula 1",
     details: "Mich Schumacher joining F1 grid with Haas fro 2021",
-    img: "schumacher.jpeg"
+    img: "/img/schumacher.jpeg"
   },
   {
     sport: "Cricket",

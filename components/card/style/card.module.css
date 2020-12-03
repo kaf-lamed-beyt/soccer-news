@@ -1,4 +1,8 @@
 .root {
-    height: 350px;
-    width: 450px;
+    height: 340px;
+    width: 280px;
+    background: #dcdcdc;
+    padding: 6px;
+    margin: 15px;
+    border-radius: 4px;
 }
