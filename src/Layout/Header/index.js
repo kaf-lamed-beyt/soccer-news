@@ -1,11 +1,11 @@
-import React from "react";
-import Appbar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import InputBase from "@material-ui/core/InputBase";
-import headStyle from "./style/header.module.css";
-import { FaUserAlt } from "react-icons/fa";
-import { AiOutlineSearch } from "react-icons/ai";
+import React from "react"
+import Appbar from "@material-ui/core/AppBar"
+import Toolbar from "@material-ui/core/Toolbar"
+import Typography from "@material-ui/core/Typography"
+import headStyle from "./style/header.module.css"
+import { FaUserAlt } from "react-icons/fa"
+import { AiOutlineSearch } from "react-icons/ai"
+
 
 const Header = () => {
   return (
