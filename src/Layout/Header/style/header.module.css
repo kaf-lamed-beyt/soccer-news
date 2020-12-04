@@ -97,3 +97,24 @@
   margin-left: -125%;
   margin-top: 23px;
 }
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .bottom_nav {
+    visibility: hidden;
+  }
+  .sky img {
+    margin: 24px 48px;
+    height: 30px;
+  }
+  .sports ul {
+    display: none;
+  }
+  .sports input {
+    display: none;
+  }
+  .sports span {
+    display: none;
+  }
+}

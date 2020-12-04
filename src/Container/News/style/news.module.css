@@ -90,9 +90,64 @@
     font-size: 20px;
   }
   .details {
-    padding-top: 18px;
+    padding: 0px;
+    width: 85%;
+  }
+  .txt {
+    padding-top: -1%;
   }
   .live {
     padding: 12px 18px;
+  }
+  .content_area img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .txt{
+    font-size: 14px;
+    width: 100%;
+  }
+  .details {
+    padding-top: 9px;
+    width: 85%;
+    height: 100%;
+    margin-top: -1px;
+  }
+  .content_area {
+    display: flex;
+  }
+  .img_cont {
+    width: 86px;
+    height: 86px;
+    margin-left: 5px;
+  }
+  .img_cont img {
+    width: 100px;
+    height: 100%;
+    margin-top: 12px;
+  }
+  #card {
+    height: 210px;
+    width: 100%;
+    margin: 7px 0px;
+  }
+  .muted_txt {
+    display: flex;
+    margin-top: 1%;
+  }
+  .live_content h4 {
+    height: 48px;
+    width: 100%;
+    margin-top: -1%;
+    border: 1px solid red;
+  }
+  .mute {
+    margin-top: 11px;
+    padding-bottom: 0%;
+  }
+  .live {
+    padding: 12px 0px;
   }
 }

@@ -16,20 +16,22 @@ const NewsLayout = () => {
         <Grid container>
             {headlines.map((headline, index) => {
               return (
-                <Grid xs={10} sm={6} md>
+                <Grid xs={10} sm={6} md={4}>
                   <Card key={index} className={news.card_item}>
-                    <div className={news.content_area}>
-                      <img
-                        src={headline.img}
-                        alt="headline image"
-                        className={news.headline_img}
-                      />
-                      <div className={news.details}>
-                        <p className={news.sport}>{headline.sport}</p>
-                        <p className={news.txt}>{headline.details}</p>
-                      </div>
+                  <div className={news.content_area}>
+                    <div className={news.img_cont}>
+                    <img
+                      src={headline.img}
+                      alt="headline image"
+                      className={news.headline_img}
+                    />
                     </div>
-                  </Card>
+                    <div className={news.details}>
+                      <p className={news.sport}>{headline.sport}</p>
+                      <p className={news.txt}>{headline.details}</p>
+                    </div>
+                  </div>
+                </Card>
                 </Grid>
               )
             })}
@@ -45,12 +47,14 @@ const NewsLayout = () => {
                       <h4>{sports.title}</h4>
                       <p>{sports.status}</p>
                       <img src={sports.img} />
-                      <p className={news.muted}>
-                        Get Sky Sports <IoIosArrowForward />{" "}
-                      </p>
-                      <p className={news.mute}>
-                        Get a Sky Sports Pass <IoIosArrowForward />{" "}
-                      </p>
+                      <div className={news.muted_txt}>
+                        <p className={news.muted}>
+                          Get Sky Sports <IoIosArrowForward />{" "}
+                        </p>
+                        <p className={news.mute}>
+                          Get a Sky Sports Pass <IoIosArrowForward />{" "}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 );
