@@ -97,6 +97,18 @@
   margin-left: -125%;
   margin-top: 23px;
 }
+@media only screen and (max-width: 576px) {
+  .sky img {
+    margin: 24px 30px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .sky img {
+    margin: 24px 20px;
+    height: 30px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .header {
     height: 80px;
@@ -118,15 +130,22 @@
     display: none;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1024px) {
+  .bottom_nav ul {
+    font-size: 14px;
+    margin: 3px 5px;
+  }
   .sky img {
-    margin: 24px 30px;
+    margin: 24px 95px;
     height: 30px;
   }
-}
-@media only screen and (max-width: 400px) {
-  .sky img {
-    margin: 24px 20px;
-    height: 30px;
+  .sports ul {
+    display: none;
+  }
+  .sports input {
+    display: none;
+  }
+  .sports span {
+    display: none;
   }
 }

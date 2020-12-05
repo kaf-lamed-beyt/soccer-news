@@ -89,3 +89,24 @@
     padding: 3px 12px;
   }
 }
+@media only screen and (max-width: 1050px) {
+  .footer {
+    padding: 18px 10px;
+  }
+  .links {
+    width: 100%;
+  }
+  .link_text {
+    width: 100%;
+    margin: 5px 0px;
+  }
+  .rights {
+    flex-wrap: wrap;
+  }
+  .rights li {
+    font-size: 13px;
+  }
+  .foot_logo {
+    padding: 3px 2px;
+  }
+}

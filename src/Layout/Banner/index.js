@@ -5,17 +5,14 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Banner = () => {
   return (
+    <Grid container xs>
     <div className={banner.banner}>
-      <Grid container xs>
       <div className={banner.banner_content}>
-        <Grid item xs={12} md={12} lg={12}>
         <img
           src="/img/anthony-joshua.jpeg"
           alt="anthony joshua"
           className={banner.img}
         />
-        </Grid>
-        <Grid item xs={12} sm={12}>
         <div className={banner.banner_details}>
           <div>
             <div className={banner.contestants}>
@@ -32,10 +29,9 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        </Grid>
       </div>  
-      </Grid>    
     </div>  
+    </Grid>    
   );
 };
 
