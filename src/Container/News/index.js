@@ -13,10 +13,10 @@ const NewsLayout = () => {
     <Grid>
       <section className={news.news_sect}>
         <Banner />
-        <Grid container>
+        <Grid container xs>
             {headlines.map((headline, index) => {
               return (
-                <Grid xs={10} sm={6} md={4}>
+                <Grid xs={10} sm={6} md>
                   <Card key={index} className={news.card_item}>
                   <div className={news.content_area}>
                     <div className={news.img_cont}>

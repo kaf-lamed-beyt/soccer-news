@@ -83,7 +83,7 @@
 /* live sports section ends here */
 @media only screen and (max-width: 768px) {
   .news_sect {
-    padding: 0;
+    padding: 10px 20px;
     margin: 0;
   }
   .txt{
@@ -97,11 +97,14 @@
     padding-top: -1%;
   }
   .live {
-    padding: 12px 18px;
+    padding: 12px 0px;
   }
   .content_area img {
     width: 100%;
     height: 100%;
+  }
+  .card_item {
+    margin: 7px 26px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -148,5 +151,10 @@
   }
   .live {
     padding: 12px 0px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .news_sect {
+    padding: 0px 10px;
   }
 }
