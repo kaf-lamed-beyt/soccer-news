@@ -18,12 +18,14 @@
     margin: 14px 0px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .root {
-    height: 320px;
+    width: 650px !important;
+    height: 550px !important;
+    margin: 14px 25px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .root {
     width: 440px;
     height: 400px;

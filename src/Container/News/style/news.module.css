@@ -83,8 +83,7 @@
 /* live sports section ends here */
 @media only screen and (max-width: 768px) {
   .news_sect {
-    padding: 10px 20px;
-    margin: 0;
+    padding: 5px;
   }
   .details {
     padding: 0px;
@@ -92,7 +91,7 @@
   }
   .txt {
     padding-top: 3%;
-    font-size: 30px;
+    font-size: 25px;
   }
   .sport {
     font-size: 18px;

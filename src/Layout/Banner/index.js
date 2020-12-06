@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Banner = () => {
   return (
-    <Grid container xs={12} lg={10} md={12}>
+    <Grid container xs={12} lg={12} md={12}>
     <div className={banner.banner}>
       <div className={banner.banner_content}>
         <img
