@@ -132,8 +132,10 @@
 }
 @media only screen and (max-width: 1024px) {
   .bottom_nav ul {
-    font-size: 14px;
     margin: 3px 5px;
+  }
+  .bottom_nav li {
+    font-size: 14px;
   }
   .sky img {
     margin: 24px 95px;
