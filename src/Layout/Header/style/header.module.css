@@ -99,7 +99,7 @@
 }
 @media only screen and (max-width: 576px) {
   .sky img {
-    margin: 24px 5px;
+    margin: 24px 17px !important;
     height: 30px;
   }
   .sports ul {
@@ -129,17 +129,23 @@
     margin: 25px 100px;
     height: 30px;
   }
-  .sports {
-    padding: 8px 20px;
+  .sports input {
+    visibility: hidden;
+  }
+  .sports ul {
+    visibility: hidden;
+  }
+  .sports span {
+    visibility: hidden;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .bottom_nav ul {
     padding: 0;
     margin-left: -5%;
   }
   .bottom_nav {
-    margin-left: 18%;
+    margin-left: 17%;
   }
   .bottom_nav ul {
     padding-right: 40px;
@@ -158,8 +164,9 @@
     padding: 8px 70px;
   }
   .bottom_nav button {
-    width: 165px !important;
-    height: 40px;
+    width: 150px;
+    height: 35px;
+    margin-right: -6%;
     font-size: 13px;
   }
 }
