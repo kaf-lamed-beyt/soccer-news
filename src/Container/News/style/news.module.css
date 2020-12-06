@@ -81,29 +81,6 @@
   text-decoration: underline;
 }
 /* live sports section ends here */
-@media only screen and (max-width: 768px) {
-  .news_sect {
-    padding: 5px;
-  }
-  .details {
-    padding: 0px;
-    width: 85%;
-  }
-  .txt {
-    padding-top: 3%;
-    font-size: 25px;
-  }
-  .sport {
-    font-size: 18px;
-  }
-  .live {
-    padding: 12px 0px;
-  }
-  .content_area img {
-    width: 100%;
-    height: 100%;
-  }
-}
 @media only screen and (max-width: 576px) {
   .news_sect {
     padding: 0px !important;
@@ -151,6 +128,29 @@
   }
   .live {
     padding: 12px 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .news_sect {
+    padding: 5px;
+  }
+  .details {
+    padding: 0px;
+    width: 85%;
+  }
+  .txt {
+    padding-top: 3%;
+    font-size: 25px;
+  }
+  .sport {
+    font-size: 18px;
+  }
+  .live {
+    padding: 12px 0px;
+  }
+  .content_area img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media only screen and (max-width: 1024px) {

@@ -99,8 +99,17 @@
 }
 @media only screen and (max-width: 576px) {
   .sky img {
-    margin: 24px 30px;
+    margin: 24px 5px;
     height: 30px;
+  }
+  .sports ul {
+    display: none;
+  }
+  .sports input {
+    display: none;
+  }
+  .sports span {
+    display: none;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -117,37 +126,40 @@
     visibility: hidden;
   }
   .sky img {
-    margin: 24px 95px;
+    margin: 25px 100px;
     height: 30px;
   }
-  .sports ul {
-    display: none;
-  }
-  .sports input {
-    display: none;
-  }
-  .sports span {
-    display: none;
+  .sports {
+    padding: 8px 20px;
   }
 }
 @media only screen and (max-width: 1024px) {
   .bottom_nav ul {
-    margin: 3px 5px;
+    padding: 0;
+    margin-left: -5%;
+  }
+  .bottom_nav {
+    margin-left: 18%;
+  }
+  .bottom_nav ul {
+    padding-right: 40px;
   }
   .bottom_nav li {
     font-size: 14px;
   }
+  .bottom_nav li:nth-child(6) {
+    width: 80px;
+  }
   .sky img {
-    margin: 24px 95px;
+    margin: 24px 150px;
     height: 30px;
   }
-  .sports ul {
-    display: none;
+  .sports {
+    padding: 8px 70px;
   }
-  .sports input {
-    display: none;
-  }
-  .sports span {
-    display: none;
+  .bottom_nav button {
+    width: 165px !important;
+    height: 40px;
+    font-size: 13px;
   }
 }
