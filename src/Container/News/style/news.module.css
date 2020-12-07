@@ -108,7 +108,7 @@
 }
 @media only screen and (max-width: 768px) {
   .news_sect {
-    padding: 20px;
+    padding: 0;
   }
   .details {
     height: 100px;
