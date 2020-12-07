@@ -98,9 +98,9 @@
   margin-top: 23px;
 }
 @media only screen and (max-width: 576px) {
-  .sky img {
-    margin: 25px 30px !important;
-    height: 30px;
+  #force {
+    height: 26px;
+    padding: 0 38px;
   }
   .sports ul {
     display: none;
@@ -110,12 +110,6 @@
   }
   .sports span {
     display: none;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .sky img {
-    margin-left: -2%;
-    height: 30px;
   }
 }
 @media only screen and (max-width: 768px) {
