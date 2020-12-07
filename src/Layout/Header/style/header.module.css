@@ -99,7 +99,7 @@
 }
 @media only screen and (max-width: 576px) {
   .sky img {
-    margin: 24px 17px !important;
+    margin: 25px 30px !important;
     height: 30px;
   }
   .sports ul {
@@ -118,7 +118,7 @@
     height: 30px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .header {
     height: 80px;
   }
@@ -139,7 +139,7 @@
     visibility: hidden;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .bottom_nav ul {
     padding: 0;
     margin-left: -5%;
