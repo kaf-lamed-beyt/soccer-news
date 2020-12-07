@@ -118,7 +118,7 @@
     height: 30px;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .header {
     height: 80px;
   }
@@ -126,8 +126,8 @@
     visibility: hidden;
   }
   .sky img {
-    margin: 25px 100px;
-    height: 30px;
+    margin: 19px 88px !important;
+    height: 38px !important;
   }
   .sports input {
     visibility: hidden;

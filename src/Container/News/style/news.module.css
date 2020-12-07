@@ -106,3 +106,16 @@
     margin: 0;
   }
 }
+@media only screen and (max-width: 768px) {
+  .news_sect {
+    padding: 20px;
+  }
+  .details {
+    height: 100px;
+    margin-top: 1%;
+  }
+  .live {
+    padding: 0;
+    margin: 0;
+  }
+}

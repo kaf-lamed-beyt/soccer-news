@@ -14,7 +14,7 @@ const NewsLayout = () => {
         <Grid container>
           {headlines.map((headline, index) => {
             return (
-              <Grid item xs={12} lg={4}>
+              <Grid item xs={12} lg={4} sm={6} spacing={2}  >
                 <Card key={index} className={news.card_item}>
                   <div className={news.content_area}>
                     <div className={news.img_cont}>
