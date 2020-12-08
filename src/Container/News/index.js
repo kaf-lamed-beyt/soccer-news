@@ -11,10 +11,10 @@ const NewsLayout = () => {
     <Grid>
       <section className={news.news_sect}>
         <Banner />
-        <Grid container>
+        <Grid container spacing={2}>
           {headlines.map((headline, index) => {
             return (
-              <Grid item xs={12} lg={4} sm={6} spacing={2}  >
+              <Grid item xs={12} lg={4} sm={6}>
                 <Card key={index} className={news.card_item}>
                   <div className={news.content_area}>
                     <div className={news.img_cont}>

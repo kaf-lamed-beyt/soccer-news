@@ -3,6 +3,7 @@ import headStyle from "./style/header.module.css"
 import { FaUserAlt } from "react-icons/fa"
 import { AiOutlineSearch } from "react-icons/ai"
 import Burger from "../../../components/Burger"
+import Colors from "../../../components/NavColor"
 
 const Header = () => {
   return (
@@ -28,6 +29,7 @@ const Header = () => {
           </span>
         </div>
         <Burger />
+        <Colors />
       </div>
       <div className={headStyle.bottom_nav}>
         <ul>
