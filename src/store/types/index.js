@@ -1,0 +1,1 @@
+export const GET_SPORT_NEWS = "GET_SPORT_NEWS"

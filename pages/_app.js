@@ -1,11 +1,16 @@
 import React from "react";
 import "../styles/globals.css";
 import Head from "next/head";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/globals.css";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { Provider } from "react-redux";
+import theme from "../src/theme"
+import { Provider } from "react-redux"
+import { createStore, applyMiddleware } from "redux"
+import { createLogger } from "redux-logger"
+import appReducer from "../src/store/reducers"
+
+const logger = createLogger()
+const store = createStore(appReducer, applyMiddleware(logger))
 
 
 function MyApp({ Component, pageProps }) {
@@ -31,14 +36,18 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         ></link>
       </Head>
-      <Provider store={store}>
-        <ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <Provider store={store}> 
           <CssBaseline />
           <Component {...pageProps} />
-        </ThemeProvider>
-      </Provider>
+        </Provider>
+      </ThemeProvider>
     </div>
   );
 }
+
+store.subscribe(() => {
+  console.log("Omo, the store don change sha 😲", store.getState())
+})
 
 export default MyApp;

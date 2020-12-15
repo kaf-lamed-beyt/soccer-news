@@ -1,12 +1,39 @@
-import React from "react";
-import news from "./style/news.module.css";
-import { liveSports, headlines } from "../../news_data";
-import Card from "../../../components/card";
-import { IoIosArrowForward } from "react-icons/io";
-import Grid from "@material-ui/core/Grid";
-import Banner from "../../Layout/Banner";
+import React from "react"
+import news from "./style/news.module.css"
+import { liveSports, headlines } from "../../news_data"
+import Card from "../../../components/card"
+import { IoIosArrowForward } from "react-icons/io"
+import Grid from "@material-ui/core/Grid"
+import Banner from "../../Layout/Banner"
+import axios from "axios"
+import { useSelector, useDispatch } from "react-redux"
+import { setSportNews } from "../../store/actions"
 
 const NewsLayout = () => {
+  // news is the property of the initial state
+  // that was set in the sporNews reducer of the
+  const { sports } = useSelector(({ sportNews }) => sportNews)
+  const dispatch = useDispatch()
+  console.log(sports)
+
+  React.useEffect(() => {
+    const getSportNews = async () => {
+      const newsResult = await axios(
+        "https://skysportsapi.herokuapp.com/sky/getlatest/v1.0",
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "localhost:3000",
+          },
+        }
+      )
+
+      // console.log(newsResult.data)
+      dispatch(sportNewsAction.setSportNews(newsResult.data))
+    }
+
+    getSportNews()
+  }, [])
+
   return (
     <Grid>
       <section className={news.news_sect}>
@@ -14,8 +41,8 @@ const NewsLayout = () => {
         <Grid container spacing={2}>
           {headlines.map((headline, index) => {
             return (
-              <Grid item xs={12} lg={4} sm={6}>
-                <Card key={index} className={news.card_item}>
+              <Grid item xs={12} lg={4} sm={6} key={index}>
+                <Card className={news.card_item}>
                   <div className={news.content_area}>
                     <div className={news.img_cont}>
                       <img
@@ -31,7 +58,7 @@ const NewsLayout = () => {
                   </div>
                 </Card>
               </Grid>
-            );
+            )
           })}
         </Grid>
         <Grid container>
@@ -55,13 +82,13 @@ const NewsLayout = () => {
                     </div>
                   </div>
                 </div>
-              );
+              )
             })}
           </section>
         </Grid>
       </section>
     </Grid>
-  );
-};
+  )
+}
 
-export default NewsLayout;
+export default NewsLayout

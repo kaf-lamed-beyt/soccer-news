@@ -1,3 +1,5 @@
-import homeAction from "./homeAction"
+import setSportNews from "./sportNewsAction"
 
-export { homeAction }
+export {
+    setSportNews
+}
